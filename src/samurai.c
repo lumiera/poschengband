@@ -16,7 +16,7 @@ cptr do_hissatsu_spell(int spell, int mode)
     {
     case 0:
         if (name) return "Tobi-Izuna";
-        if (desc) return "Attacks a two squares distant monster.";
+        if (desc) return "Attacks a monster up to two tiles away.";
         if (cast)
         {
             project_length = 2;
@@ -28,7 +28,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 1:
         if (name) return "3-Way Attack";
-        if (desc) return "Attacks in 3 directions in one time.";
+        if (desc) return "Attacks in 3 directions at the same time.";
         if (cast)
         {
             int cdir;
@@ -106,7 +106,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 5:
         if (name) return "Strike to Stun";
-        if (desc) return "Attempts to stun a monster in the adjacent.";
+        if (desc) return "Attempts to stun an adjacent monster.";
         if (cast)
         {
             int y, x;
@@ -129,7 +129,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 6:
         if (name) return "Counter";
-        if (desc) return "Prepares to counterattack. When attack by a monster, strikes back using SP each time.";
+        if (desc) return "Prepares to counterattack. When attacked by a monster, strikes back using SP each time.";
         if (cast)
         {
             if (p_ptr->riding)
@@ -137,14 +137,14 @@ cptr do_hissatsu_spell(int spell, int mode)
                 msg_print("You cannot do it when riding.");
                 return NULL;
             }
-            msg_print("You prepare to counter blow.");
+            msg_print("You prepare to counterattack.");
             p_ptr->counter = TRUE;
         }
         break;
 
     case 7:
         if (name) return "Harainuke";
-        if (desc) return "Attacks monster with your weapons normally, then move through counter side of the monster.";
+        if (desc) return "Attack a monster with your weapon normally, then move behind the monster.";
         if (cast)
         {
             int y, x;
@@ -207,7 +207,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 9:
         if (name) return "Zammaken";
-        if (desc) return "Attacks an evil unliving monster with great damage. No effect to other  monsters.";
+        if (desc) return "Attacks an evil undead monster with great damage. Has no effect on other monsters.";
         if (cast)
         {
             int y, x;
@@ -230,7 +230,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 10:
         if (name) return "Wind Blast";
-        if (desc) return "Attacks an adjacent monster, and blow it away.";
+        if (desc) return "Attacks an adjacent monster and blows it away.";
         if (cast)
         {
             int y, x;
@@ -311,7 +311,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 12:
         if (name) return "Rock Smash";
-        if (desc) return "Breaks rock. Or greatly damage a monster made by rocks.";
+        if (desc) return "Breaks a wall or greatly damages a monster hurt by rock remover.";
         if (cast)
         {
             int y, x;
@@ -380,7 +380,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 15:
         if (name) return "Majingiri";
-        if (desc) return "Attempts to attack with critical hit. But this attack is easy to evade for a monster.";
+        if (desc) return "Attempts to attack a monster with a critical hit. Monsters can easily evade this.";
     
         if (cast)
         {
@@ -404,7 +404,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 16:
         if (name) return "Desperate Attack";
-        if (desc) return "Attacks with all of your power. But all damages you take will be doubled for one turn.";
+        if (desc) return "Attacks with all of your power. But all damage you take will be doubled for one turn.";
     
         if (cast)
         {
@@ -453,7 +453,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 18:
         if (name) return "Rush Attack";
-        if (desc) return "Steps close to a monster and attacks at a time.";
+        if (desc) return "Steps close to a monster and attacks at the same time.";
     
         if (cast)
         {
@@ -463,7 +463,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 19:
         if (name) return "Bloody Maelstrom";
-        if (desc) return "Attacks all adjacent monsters with power corresponding to your cut status. Then increases your cut status. No effect to unliving monsters.";
+        if (desc) return "Attacks all adjacent monsters with power corresponding to your cut status. Increases your cut status. No effect to unliving monsters.";
     
         if (cast)
         {
@@ -504,7 +504,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 20:
         if (name) return "Earthquake Blow";
-        if (desc) return "Shakes dungeon structure, and results in random swapping of floors and walls.";
+        if (desc) return "Shakes dungeon structure, resulting in a random swapping of floors and walls.";
     
         if (cast)
         {
@@ -579,7 +579,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 23:
         if (name) return "Musou-Sandan";
-        if (desc) return "Attacks with powerful 3 strikes.";
+        if (desc) return "Attacks with three powerful strikes.";
     
         if (cast)
         {
@@ -661,7 +661,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 24:
         if (name) return "Vampire's Fang";
-        if (desc) return "Attacks with vampiric strikes which absorbs HP from a monster and gives them to you. No effect to unliving monsters.";
+        if (desc) return "Attacks with a vampiric strike which absorbs HP from a monster and gives it to you. Has no effect on unliving monsters.";
     
         if (cast)
         {
@@ -685,7 +685,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 25:
         if (name) return "Moon Dazzling";
-        if (desc) return "Attempts to stun, confuse and sleep all waking monsters.";
+        if (desc) return "Attempts to stun, confuse and sleep all monsters in sight.";
     
         if (cast)
         {
@@ -698,7 +698,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 26:
         if (name) return "Hundred Slaughter";
-        if (desc) return "Performs a series of rush attacks. The series continues while killing each monster in a time and SP remains.";
+        if (desc) return "Performs a series of rush attacks. The series continue while targets die and SP remains.";
     
         if (cast)
         {
@@ -735,7 +735,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 27:
         if (name) return "Dragonic Flash";
-        if (desc) return "Runs toward given location while attacking all monsters on the path.";
+        if (desc) return "Run towards a given location while attacking all monsters on the path.";
     
         if (cast)
         {
@@ -847,7 +847,7 @@ cptr do_hissatsu_spell(int spell, int mode)
 
     case 30:
         if (name) return "Keiun-Kininken";
-        if (desc) return "Attacks a monster with extremely powerful damage. But you also takes some damages. Hurts a undead monster greatly.";
+        if (desc) return "Attacks a monster with extreme power, but you also damages you. Hurts undead monsters greatly.";
     
         if (cast)
         {

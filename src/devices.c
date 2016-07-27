@@ -4353,7 +4353,7 @@ cptr do_effect(effect_t *effect, int mode, int boost)
     {
         int amt = _extra(effect, 50);
         if (name) return "Curing";
-        if (desc) return "It cures blindness, poison, confusion, stunning, cuts and hallucination when you quaff it.";
+        if (desc) return "It cures blindness, poison, confusion, stunning, cuts and hallucination.";
         if (value) return format("%d", 500 + 10*amt);
         if (color) return format("%d", TERM_L_GREEN);
         if (cast)
@@ -5965,7 +5965,7 @@ cptr do_effect(effect_t *effect, int mode, int boost)
         if (color) return format("%d", res_color(RES_CONF));
         if (cast)
         {
-            msg_print("You glare nearby monsters with a dazzling array of confusing lights!");
+            msg_print("You mesmerize nearby monsters with a dazzling array of confusing lights!");
             pow = _BOOST(pow);
             slow_monsters(pow);
             stun_monsters(pow);

@@ -3974,7 +3974,7 @@ bool set_kabenuke(int v, bool do_dec)
         }
         else if (!p_ptr->kabenuke)
         {
-            msg_print("You became ethereal form.");
+            msg_print("You became ethereal.");
 
             notice = TRUE;
         }
@@ -3985,7 +3985,7 @@ bool set_kabenuke(int v, bool do_dec)
     {
         if (p_ptr->kabenuke)
         {
-            msg_print("You are no longer in an ethereal form.");
+            msg_print("You are no longer ethereal.");
 
             notice = TRUE;
         }

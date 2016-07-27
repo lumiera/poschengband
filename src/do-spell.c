@@ -2386,7 +2386,7 @@ static cptr do_nature_spell(int spell, int mode)
 
     case 15:
         if (name) return "Herbal Healing";
-        if (desc) return "Heals HP greatly. And heals cut, stun and poison completely.";
+        if (desc) return "Heals HP greatly, heals cuts, stun and poison completely.";
     
         {
             int heal = spell_power(500);
@@ -3375,7 +3375,7 @@ static cptr do_chaos_spell(int spell, int mode)
 
     case 31:
         if (name) return "Call the Void";
-        if (desc) return "Fires rockets, mana balls and nuclear waste balls in all directions each unless you are not adjacent to any walls. Otherwise *destroys* huge area.";
+        if (desc) return "Fires rockets, mana balls and nuclear waste balls in all directions each unless you are not adjacent to any walls. Otherwise *destroys* a huge area.";
     
         {
             if (info) return format("%s3 * 175", s_dam);
@@ -3810,7 +3810,7 @@ static cptr do_death_spell(int spell, int mode)
 
     case 19:
         if (name) return "Battle Frenzy";
-        if (desc) return "Gives another bonus to hit and HP, immunity to fear for a while. Hastes you. But decreases AC.";
+        if (desc) return "Gives you the effects of Bless, Heroism and Haste Self.";
     
         {
             int b_base = spell_power(25);
@@ -4041,7 +4041,7 @@ static cptr do_death_spell(int spell, int mode)
 
     case 31:
         if (name) return "Wraithform";
-        if (desc) return "Becomes wraith form which gives ability to pass walls and makes all damages half.";
+        if (desc) return "Assume a wraith form that can passwall, reflect, take half damage and is immune to darkness but vulnerable to light.";
     
         {
             int base = spell_power(plev / 2);
@@ -6983,7 +6983,7 @@ static cptr do_crusade_spell(int spell, int mode)
 
     case 30:
         if (name) return "Divine Intervention";
-        if (desc) return "Damages all adjacent monsters with holy power. Damages and attempt to slow, stun, confuse, scare and freeze all monsters in sight. And heals HP.";
+        if (desc) return "Damages all adjacent monsters with holy power, then damages and attempts to slow, stun, confuse, scare and freeze all monsters in sight. And heals HP.";
     
         {
             int b_dam = spell_power(plev * 11);

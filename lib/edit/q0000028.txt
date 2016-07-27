@@ -10,7 +10,7 @@ Q:28:Q:1:0:0:5:70:776:0:0:6
 ?:[LEQ $QUEST28 2]
 Q:28:T:A mysterious force has entered the royal crypt and is
 Q:28:T:desecrating the graves of the king's noble ancestors.  Their
-Q:28:T:bodily remains have been magicly animated and their spirits
+Q:28:T:bodily remains have been magically animated and their spirits
 Q:28:T:enslaved and forcibly turned to evil.  You must enter the
 Q:28:T:crypt and seek out the Archliches.  Once they have been
 Q:28:T:eliminated, my guards should be able to take care of the

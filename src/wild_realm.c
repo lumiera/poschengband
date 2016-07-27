@@ -139,7 +139,7 @@ void _wild_stone_skin_off(void) {
 
 void _wild_passwall_on(void) {
     if (!IS_PASSWALL())
-        msg_print("You take on an ethereal form!");
+        msg_print("You become ethereal.");
 }
 
 void _wild_passwall_off(void) {

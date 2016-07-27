@@ -1705,7 +1705,7 @@ P:Copy:Nibelung:Rogue
 O:DROP_DWARF
 D:Night dwarfs collecting new riches for their master, Alberich.
 
-N:112:Disembodied hand that strangled people
+N:112:Disembodied hand
 G:z:g
 I:130:7d8:30:15:20:20
 W:6:2:40:20:0:0
@@ -8821,7 +8821,7 @@ S:BR_ACID
 D:It has a form that legends are made of. Its still-tender scales are a
 D:darkest black hue. Acid drips from its body.
 
-N:547:Mumak
+N:547:Young mumak
 G:q:s
 I:110:90d10:20:55:100:700
 W:35:3:90:2100:50000:716
@@ -10926,7 +10926,7 @@ S:S_UNDEAD
 D:Another Dark Judge, he is a rotting humanoid with a cow's skull as 
 D:his head.
 
-N:657:Dark elven sorceror
+N:657:Dark elven sorcerer
 G:h:v
 I:130:80d10:20:70:10:150
 W:41:2:999:5000:30000:886
@@ -15878,7 +15878,7 @@ P:Copy:Dunadan:Monk
 P:Body:Monk
 P:Speed:+7
 
-N:871:Metal Babble
+N:871:Young Metal Babble
 G:j:s
 I:190:3d2:200:10000:0:2
 W:80:10:999:400000:0:0
